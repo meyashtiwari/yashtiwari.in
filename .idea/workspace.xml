@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd9b7d98-6ae3-429b-9b4b-79ebf11a9b94" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/vitest.setup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/hi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.inlang/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/assets/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.stories.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Configure.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.stories.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Page.stories.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/accessibility.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/accessibility.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/addon-library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/assets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/avif-test-image.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/context.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/discord.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/docs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/figma-plugin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/styling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/testing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/theming.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/tutorials.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vitest.shims.d.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/mrh4ck/Work/Personal/yashtiwari.in" value="3CxC8GOQQvKzMPlIOhCQRjgkAaQ" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3CxC8GOQQvKzMPlIOhCQRjgkAaQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "bun",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/mrh4ck/Work/Personal/yashtiwari.in",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "bun",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd9b7d98-6ae3-429b-9b4b-79ebf11a9b94" name="Changes" comment="" />
+      <created>1777317673344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777317673344</updated>
+      <workItem from="1777317675362" duration="366000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

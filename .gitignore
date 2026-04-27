@@ -4,3 +4,4 @@ node_modules/
 .claude/worktrees
 .nx/polygraph
 .nx/self-healing
+.idea/

@@ -2,6 +2,9 @@
   "name": "yashtiwari.in",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "dev": "nx run-many --target=serve --projects=backend,frontend --parallel"
+  },
   "devDependencies": {
     "@angular-devkit/core": "~21.2.0",
     "@angular-devkit/schematics": "~21.2.0",

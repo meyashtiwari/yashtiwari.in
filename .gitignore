@@ -1,7 +1,2 @@
-node_modules/
-.nx/cache
-.nx/workspace-data
-.claude/worktrees
-.nx/polygraph
-.nx/self-healing
 .idea/
+node_modules

@@ -1,6 +1,6 @@
 {
   "name": "yashtiwari.in",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "devDependencies": {
     "@angular-devkit/core": "~21.2.0",

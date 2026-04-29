@@ -7,7 +7,7 @@ import {
   HttpStatus,
   Param,
   Patch,
-  Post
+  Post, Query
 } from '@nestjs/common';
 import { CreateProjectDto } from './dto/create-project.dto';
 import { UpdateProjectDto } from './dto/update-project.dto';
@@ -26,8 +26,11 @@ export class ProjectsController {
 
   // GET /api/projects
   @Get()
-  findAll() {
-    return this.projectsService.findAll();
+  findAll(
+    @Query('published') published?: string,
+    @Query('featured') featured?: string
+  ) {
+    return this.projectsService.findAll(published, featured);
   }
 
   // GET /api/projects/published

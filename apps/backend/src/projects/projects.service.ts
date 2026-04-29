@@ -20,9 +20,21 @@ export class ProjectsService {
     return createdProject.save();
   }
 
-  async findAll(): Promise<Project[]> {
+  async findAll(published?: string, featured?: string): Promise<Project[]> {
+    const filter: Record<string, boolean> = {};
+
+    // Parse and add published filter if provided
+    if (published !== undefined && published !== '') {
+      filter.isPublished = published === 'true';
+    }
+
+    // Parse and add featured filter if provided
+    if (featured !== undefined && featured !== '') {
+      filter.featured = featured === 'true';
+    }
+
     return this.projectModel
-      .find()
+      .find(filter)
       .sort({ order: 1 })
       .exec();
   }

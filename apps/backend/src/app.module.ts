@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { HomeModule } from './home/home.module';
 import { SiteConfigModule } from './site-config/site-config.module';
+import { ProjectsModule } from './projects/projects.module';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { SiteConfigModule } from './site-config/site-config.module';
     }),
 
     HomeModule,
-
+    ProjectsModule,
     SiteConfigModule
   ],
   controllers: [],

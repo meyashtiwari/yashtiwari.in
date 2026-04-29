@@ -63,6 +63,13 @@ export class ProjectsController {
     return this.projectsService.findFeatured();
   }
 
+  @Get('search')
+  findSearch(
+    @Query('query') query: string
+  ) {
+    return this.projectsService.search(query);
+  }
+
   // GET /api/projects/:id
   @Get(':id')
   findOne(@Param('id') id: string) {

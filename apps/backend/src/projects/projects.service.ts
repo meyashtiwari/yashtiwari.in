@@ -50,6 +50,20 @@ export class ProjectsService {
       .exec();
   }
 
+  async search(query: string): Promise<ProjectDocument[]> {
+    const results = await this.projectModel
+      .find({ title: { $regex: query, $options: 'i' } })
+      .exec();
+
+    if (!results || results.length === 0) {
+      throw new NotFoundException(
+        `No records found with query matching: ${query}`,
+      );
+    }
+
+    return results;
+  }
+
   async findPublished(): Promise<Project[]> {
     return this.projectModel
       .find({ isPublished: true })

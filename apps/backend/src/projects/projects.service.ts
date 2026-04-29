@@ -83,7 +83,7 @@ export class ProjectsService {
       .findByIdAndUpdate(
         id,
         updateProjectDto,
-        { new: true }, // return the updated document, not the old one
+        { returnDocument: 'after' }, // return the updated document, not the old one
       )
       .exec();
 

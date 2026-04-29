@@ -7,11 +7,14 @@ import {
   HttpStatus,
   Param,
   Patch,
-  Post, Query
+  Post,
+  Query,
+  UseGuards,
 } from '@nestjs/common';
 import { CreateProjectDto } from './dto/create-project.dto';
 import { UpdateProjectDto } from './dto/update-project.dto';
 import { ProjectsService } from './projects.service';
+import { ProjectsGuard } from './projects.guard';
 
 @Controller('projects')
 export class ProjectsController {
@@ -60,6 +63,7 @@ export class ProjectsController {
   // DELETE /api/projects/:id
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT) // returns 204
+  @UseGuards(ProjectsGuard)
   remove(@Param('id') id: string) {
     return this.projectsService.remove(id);
   }

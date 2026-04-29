@@ -35,7 +35,7 @@
 
             <div class="project-detail__links">
                 @if (project()!.liveUrl) {
-
+                    <a
                     [href]="project()!.liveUrl"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -45,6 +45,7 @@
                 }
                 @if (project()!.githubUrl) {
 
+                    <a
                     [href]="project()!.githubUrl"
                             target="_blank"
                             rel="noopener noreferrer"

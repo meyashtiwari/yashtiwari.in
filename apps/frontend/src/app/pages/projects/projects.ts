@@ -1,15 +1,15 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ProjectsService } from '../../core/services/projects.service';
-import { ProjectCardComponent } from './components/project-card/project-card';
+import { ProjectCard } from './components/project-card/project-card';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ProjectCardComponent],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss',
+  imports: [ProjectCard],
+  templateUrl: './projects.html',
+  styleUrl: './projects.css',
 })
-export class ProjectsComponent implements OnInit {
+export class Projects implements OnInit {
   projectsService = inject(ProjectsService);
 
   // Expose signals directly from service for template to read

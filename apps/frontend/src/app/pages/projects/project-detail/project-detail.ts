@@ -6,10 +6,10 @@ import { ProjectsService } from '../../../core/services/projects.service';
   selector: 'app-project-detail',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './project-detail.component.html',
-  styleUrl: './project-detail.component.scss',
+  templateUrl: './project-detail.html',
+  styleUrl: './project-detail.css',
 })
-export class ProjectDetailComponent implements OnInit {
+export class ProjectDetail implements OnInit {
   private route = inject(ActivatedRoute); // gives access to current route info
   private projectsService = inject(ProjectsService);
 

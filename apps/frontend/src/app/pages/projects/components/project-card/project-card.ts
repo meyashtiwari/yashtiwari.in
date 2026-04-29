@@ -6,10 +6,10 @@ import { Project } from 'shared-types';
   selector: 'app-project-card',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.scss',
+  templateUrl: './project-card.html',
+  styleUrl: './project-card.css',
 })
-export class ProjectCardComponent {
+export class ProjectCard {
   // input() — declares a property that the parent passes in
   project = input.required<Project>(); // required means parent MUST pass this
 }

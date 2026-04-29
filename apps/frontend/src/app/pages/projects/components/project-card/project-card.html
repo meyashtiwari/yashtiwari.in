@@ -21,7 +21,7 @@
         </div>
 
         <div class="project-card__links">
-
+            <a
             [routerLink]="['/projects', project()._id]"
             class="project-card__link"
             >
@@ -29,7 +29,7 @@
             </a>
 
             @if (project().liveUrl) {
-
+                <a
                 [href]="project().liveUrl"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -40,7 +40,7 @@
             }
 
             @if (project().githubUrl) {
-
+                <a
                 [href]="project().githubUrl"
                         target="_blank"
                         rel="noopener noreferrer"

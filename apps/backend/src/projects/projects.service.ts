@@ -60,7 +60,7 @@ export class ProjectsService {
   async findFeatured(): Promise<Project[]> {
     return this.projectModel
       .find({ featured: true, isPublished: true })
-      .limit(3)
+      .sort({ order: 1 })
       .exec();
   }
 

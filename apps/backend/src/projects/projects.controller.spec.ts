@@ -23,28 +23,22 @@ describe('ProjectsController', () => {
   });
 
   it('should delegate bulk creation to the service', async () => {
-    const payload = {
-      projects: [
-        {
-          title: 'Project 1',
-          description: 'Description 1',
-          thumbnail: 'thumb-1.png',
-        },
-        {
-          title: 'Project 1',
-          description: 'Description 1',
-          thumbnail: 'thumb-1.png',
-        },
-      ],
-    };
+    const payload = [
+      {
+        title: 'Project 1',
+        description: 'Description 1',
+        thumbnail: 'thumb-1.png',
+      },
+      {
+        title: 'Project 2',
+        description: 'Description 2',
+        thumbnail: 'thumb-2.png',
+      },
+    ];
 
-    projectsServiceMock.createBulk.mockResolvedValue(payload.projects);
+    projectsServiceMock.createBulk.mockResolvedValue(payload);
 
-    await expect(controller.createBulk(payload as never)).resolves.toEqual(
-      payload.projects,
-    );
-    expect(projectsServiceMock.createBulk).toHaveBeenCalledWith(
-      payload.projects,
-    );
+    await expect(controller.createBulk(payload as never)).resolves.toEqual(payload);
+    expect(projectsServiceMock.createBulk).toHaveBeenCalledWith(payload);
   });
 });

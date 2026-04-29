@@ -4,6 +4,28 @@
         <p class="projects__subtitle">Things I've built</p>
     </div>
 
+    <div class="projects__filters">
+        <label class="projects__toggle">
+            <input
+                type="checkbox"
+                [ngModel]="showFeatured()"
+                (ngModelChange)="showFeatured.set($event); onFilterChange()"
+            >
+            <span class="projects__toggle-slider"></span>
+            <span class="projects__toggle-label">Featured Only</span>
+        </label>
+
+        <label class="projects__toggle">
+            <input
+                type="checkbox"
+                [ngModel]="showPublished()"
+                (ngModelChange)="showPublished.set($event); onFilterChange()"
+            >
+            <span class="projects__toggle-slider"></span>
+            <span class="projects__toggle-label">Published</span>
+        </label>
+    </div>
+
     @if (isLoading()) {
         <div class="projects__loading">
             <p>Loading projects...</p>

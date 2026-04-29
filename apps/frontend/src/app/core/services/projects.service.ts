@@ -1,5 +1,5 @@
 import { Injectable, signal, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 import { Project } from 'shared-types';
 
@@ -17,11 +17,22 @@ export class ProjectsService {
   error = signal<string | null>(null);
 
   // Fetch all published projects
-  fetchProjects() {
+  fetchProjects(filters?: { featured?: boolean; published?: boolean }) {
     this.isLoading.set(true);
     this.error.set(null);
 
-    this.http.get<Project[]>(`${this.baseUrl}/published`).subscribe({
+    let params = new HttpParams();
+    if (filters?.featured) {
+      params = params.set('featured', 'true');
+    }
+    if (filters?.published !== undefined) {
+      params = params.set('published', filters.published ? 'true' : 'false');
+    } else {
+      // fetch published projects By default
+      params = params.set('published', 'true');
+    }
+
+    this.http.get<Project[]>(`${this.baseUrl}`, { params }).subscribe({
       next: (data) => {
         this.projects.set(data);
         this.isLoading.set(false);

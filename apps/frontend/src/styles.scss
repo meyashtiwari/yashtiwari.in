@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+:root {
+  --surface-dim: #dbdad5;
+  --on-tertiary-container: #fffbff;
+  --surface-tint: #4f6357;
+  --primary-fixed: #d2e8d9;
+  --on-error: #ffffff;
+  --inverse-surface: #30312e;
+  --surface-container: #f0eee9;
+  --primary: #4d6055;
+  --on-secondary: #ffffff;
+  --outline: #737874;
+  --secondary-container: #d1e1f8;
+  --tertiary-fixed-dim: #d3c4b1;
+  --on-tertiary: #ffffff;
+  --on-secondary-fixed-variant: #39485b;
+  --error: #ba1a1a;
+  --on-background: #1b1c19;
+  --secondary: #506073;
+  --on-error-container: #93000a;
+  --on-surface-variant: #424844;
+  --surface-container-high: #eae8e3;
+  --on-primary-container: #f5fff6;
+  --tertiary-container: #7e7362;
+  --on-surface: #1b1c19;
+  --inverse-on-surface: #f2f1ec;
+  --error-container: #ffdad6;
+  --on-primary: #ffffff;
+  --tertiary-fixed: #f0e0cc;
+  --surface-bright: #fbf9f4;
+  --secondary-fixed: #d4e4fb;
+  --primary-fixed-dim: #b6ccbd;
+  --surface-container-highest: #e4e2dd;
+  --surface: #fbf9f4;
+  --on-tertiary-fixed: #221a0e;
+  --inverse-primary: #b6ccbd;
+  --on-primary-fixed: #0c1f16;
+  --secondary-fixed-dim: #b8c8de;
+  --surface-variant: #e4e2dd;
+  --tertiary: #655a4b;
+  --on-secondary-container: #546477;
+  --on-primary-fixed-variant: #384b40;
+  --on-tertiary-fixed-variant: #4f4537;
+  --surface-container-low: #f5f3ee;
+  --background: #fbf9f4;
+  --primary-container: #65796d;
+  --outline-variant: #c2c8c2;
+  --surface-container-lowest: #ffffff;
+  --on-secondary-fixed: #0c1d2d;
+
+  --font-title-sm: 'Lexend', sans-serif;
+  --font-label-caps: 'Plus Jakarta Sans', sans-serif;
+  --font-display-lg: 'Lexend', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Lexend', sans-serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+
+  --unit: 8px;
+  --flow-margin: 64px;
+  --element-gap: 24px;
+  --container-padding: 40px;
+  --section-gap: 120px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-background);
+  font-family: var(--font-body-md), serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+}

@@ -1,0 +1,120 @@
+.project-card {
+  background-color: var(--surface-container-low);
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(77, 96, 85, 0.12);
+}
+
+.project-card__thumbnail {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.project-card__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.project-card:hover .project-card__thumbnail img {
+  transform: scale(1.05);
+}
+
+.project-card__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  font-family: var(--font-label-caps);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  z-index: 5;
+}
+
+.project-card__content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card__title {
+  font-family: var(--font-title-sm);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--on-surface);
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.project-card__description {
+  font-family: var(--font-body-md);
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.project-card__tag {
+  background-color: rgba(77, 96, 85, 0.1);
+  color: var(--primary);
+  font-family: var(--font-label-caps);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.project-card__link {
+  font-family: var(--font-body-md);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.project-card__link:first-child {
+  background-color: var(--surface-container-high);
+  color: var(--on-surface);
+}
+.project-card__link:first-child:hover {
+  background-color: var(--surface-container-highest);
+}
+
+.project-card__link--external, .project-card__link--github {
+  color: var(--secondary);
+  padding: 8px 0;
+}
+.project-card__link--external:hover, .project-card__link--github:hover {
+  color: var(--primary);
+}

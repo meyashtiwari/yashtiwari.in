@@ -1,0 +1,114 @@
+.project-detail {
+  padding-top: 140px;
+  padding-bottom: var(--section-gap);
+  padding-inline: var(--container-padding);
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--element-gap);
+}
+
+.project-detail__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.project-detail__back {
+  font-family: var(--font-body-md);
+  color: var(--secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.project-detail__back:hover {
+  color: var(--primary);
+}
+
+.project-detail__title {
+  font-family: var(--font-display-lg);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--on-background);
+  margin: 0;
+}
+
+.project-detail__thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 3rem;
+  box-shadow: 0 40px 80px -20px rgba(77, 96, 85, 0.15);
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+}
+
+.project-detail__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-block: 24px;
+  border-block: 1px solid var(--outline-variant);
+}
+
+.project-detail__tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-detail__tag {
+  background-color: rgba(77, 96, 85, 0.1);
+  color: var(--primary);
+  font-family: var(--font-label-caps);
+  font-size: 12px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+}
+
+.project-detail__links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-detail__links a {
+  font-family: var(--font-body-md);
+  color: var(--on-surface);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background-color: var(--surface-container-high);
+  transition: all 0.3s ease;
+}
+
+.project-detail__links a:hover {
+  background-color: var(--surface-container-highest);
+  transform: translateY(-2px);
+}
+
+.project-detail__description {
+  font-family: var(--font-body-lg);
+  font-weight: 300;
+  color: var(--on-surface-variant);
+  line-height: 1.8;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.project-detail__loading, .project-detail__error {
+  padding-top: 140px;
+  text-align: center;
+  font-family: var(--font-body-md);
+  color: var(--on-surface-variant);
+}

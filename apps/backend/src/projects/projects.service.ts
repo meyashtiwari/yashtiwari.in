@@ -20,6 +20,17 @@ export class ProjectsService {
     return createdProject.save();
   }
 
+  async createBulk(
+    createProjectDtos: CreateProjectDto[],
+  ): Promise<ProjectDocument[]> {
+    if (!createProjectDtos.length) {
+      throw new BadRequestException('projects array cannot be empty');
+    }
+
+    const createdProjects = await this.projectModel.insertMany(createProjectDtos);
+    return createdProjects as ProjectDocument[];
+  }
+
   async findAll(published?: string, featured?: string): Promise<Project[]> {
     const filter: Record<string, boolean> = {};
 

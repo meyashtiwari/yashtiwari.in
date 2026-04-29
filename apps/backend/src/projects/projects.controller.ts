@@ -12,6 +12,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { CreateProjectDto } from './dto/create-project.dto';
+import { BulkCreateProjectsDto } from './dto/bulk-create-projects.dto';
 import { UpdateProjectDto } from './dto/update-project.dto';
 import { ProjectsService } from './projects.service';
 import { ProjectsGuard } from './projects.guard';
@@ -25,6 +26,13 @@ export class ProjectsController {
   @HttpCode(HttpStatus.CREATED) // returns 201
   create(@Body() createProjectDto: CreateProjectDto) {
     return this.projectsService.create(createProjectDto);
+  }
+
+  // POST /api/projects/bulk
+  @Post('bulk')
+  @HttpCode(HttpStatus.CREATED)
+  createBulk(@Body() bulkCreateProjectsDto: BulkCreateProjectsDto) {
+    return this.projectsService.createBulk(bulkCreateProjectsDto.projects);
   }
 
   // GET /api/projects

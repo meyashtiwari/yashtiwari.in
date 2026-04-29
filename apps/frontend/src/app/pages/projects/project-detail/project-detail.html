@@ -1,1 +1,62 @@
-<p>project-detail works!</p>
+@if (isLoading()) {
+    <div class="project-detail__loading">
+        <p>Loading project...</p>
+    </div>
+}
+
+@if (error()) {
+    <div class="project-detail__error">
+        <p>{{ error() }}</p>
+        <a routerLink="/projects">← Back to Projects</a>
+    </div>
+}
+
+@if (project()) {
+    <article class="project-detail">
+        <header class="project-detail__header">
+            <a routerLink="/projects" class="project-detail__back">
+                ← Back to Projects
+            </a>
+            <h1 class="project-detail__title">{{ project()!.title }}</h1>
+        </header>
+
+        <img
+                [src]="project()!.thumbnail"
+                [alt]="project()!.title"
+                class="project-detail__thumbnail"
+        />
+
+        <div class="project-detail__meta">
+            <div class="project-detail__tags">
+                @for (tag of project()!.tags; track tag) {
+                    <span class="project-detail__tag">{{ tag }}</span>
+                }
+            </div>
+
+            <div class="project-detail__links">
+                @if (project()!.liveUrl) {
+
+                    [href]="project()!.liveUrl"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            View Live
+                    </a>
+                }
+                @if (project()!.githubUrl) {
+
+                    [href]="project()!.githubUrl"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            GitHub
+                    </a>
+                }
+            </div>
+        </div>
+
+        <div class="project-detail__description">
+            <p>{{ project()!.description }}</p>
+        </div>
+    </article>
+}

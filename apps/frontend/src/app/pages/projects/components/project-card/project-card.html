@@ -1,1 +1,54 @@
-<p>project-card works!</p>
+<article class="project-card">
+    <div class="project-card__thumbnail">
+        <img
+                [src]="project().thumbnail"
+                [alt]="project().title"
+                loading="lazy"
+        />
+        @if (project().featured) {
+            <span class="project-card__badge">Featured</span>
+        }
+    </div>
+
+    <div class="project-card__content">
+        <h3 class="project-card__title">{{ project().title }}</h3>
+        <p class="project-card__description">{{ project().description }}</p>
+
+        <div class="project-card__tags">
+            @for (tag of project().tags; track tag) {
+                <span class="project-card__tag">{{ tag }}</span>
+            }
+        </div>
+
+        <div class="project-card__links">
+
+            [routerLink]="['/projects', project()._id]"
+            class="project-card__link"
+            >
+            View Details
+            </a>
+
+            @if (project().liveUrl) {
+
+                [href]="project().liveUrl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card__link project-card__link--external"
+                        >
+                        Live Demo
+                </a>
+            }
+
+            @if (project().githubUrl) {
+
+                [href]="project().githubUrl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card__link project-card__link--github"
+                        >
+                        GitHub
+                </a>
+            }
+        </div>
+    </div>
+</article>

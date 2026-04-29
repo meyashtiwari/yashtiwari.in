@@ -1,1 +1,32 @@
-<p>projects works!</p>
+<section class="projects">
+    <div class="projects__header">
+        <h1 class="projects__title">Projects</h1>
+        <p class="projects__subtitle">Things I've built</p>
+    </div>
+
+    @if (isLoading()) {
+        <div class="projects__loading">
+            <p>Loading projects...</p>
+        </div>
+    }
+
+    @if (error()) {
+        <div class="projects__error">
+            <p>{{ error() }}</p>
+        </div>
+    }
+
+    @if (!isLoading() && !error() && projects().length === 0) {
+        <div class="projects__empty">
+            <p>No projects found.</p>
+        </div>
+    }
+
+    @if (!isLoading() && projects().length > 0) {
+        <div class="projects__grid">
+            @for (project of projects(); track project._id) {
+                <app-project-card [project]="project" />
+            }
+        </div>
+    }
+</section>
